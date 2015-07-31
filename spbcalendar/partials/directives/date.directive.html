@@ -1,0 +1,1 @@
+<div class="date-container" ng-class="{'current-day': date.currentDate, 'current-month': date.currentMonthDate}" ng-click="toggleEventWindow()"> <div class="date">{{ date.getDate() }}</div> <div class="events-number" ng-show="date.events.length > 3">{{ date.events.length }} events</div> <div class="clearfix"></div> <events-list events="date.events" limit="3"></events-list> </div>
